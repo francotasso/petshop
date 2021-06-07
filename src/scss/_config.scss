@@ -1,0 +1,54 @@
+// Images path use css
+// ------------------------------------------------
+$imgs: '../../public/images/';
+$fa-font-path: '../assets/fontawesome/webfonts';
+
+// $enable-rounded: false;
+
+// Define colors
+// ------------------------------------------------
+$theme-colors: (
+  "primary": #fe6c35,
+  "secondary": #283a5e,
+  "dark": #31415F,
+  "success": #47D49A,
+  "danger": #fe4702,
+  "warning": #FFC738,
+  "info": #9D4FEA,
+  "light": #fffaf8,
+  "primary-light": #E6EFFF,
+  "success-light": #47d4995e,
+  "warning-light": #ffc73863,
+  "danger-light": #fd665b56,
+  "primary-bar-0": #7399e7,
+  "primary-bar-1": #4783FC,
+  "primary-bar-2": #3676f6,
+  "primary-bar-3": #0f53dd,
+);
+
+$body-color: #31415F;
+$body-bg: #f9f9f9;
+$text-muted: rgba(#31415F, 0.6);
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  //sm: 540px, //remove for better look
+  md: 750px,
+  lg: 970px,
+  xl: 1170px
+);
