@@ -1,0 +1,34 @@
+.btn-rounded {
+    font-weight: 500;
+    padding: 13px 38px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.btn-started {
+    background-color: #fdf0eb;
+    color: map-get($theme-colors, "primary");
+    display: inline-block;
+    &:hover {
+        color: white;
+        background-color: map-get($theme-colors, "primary");
+    }
+    @media screen and (max-width: 991px) {
+        font-size: 0.875rem;
+        padding: 10px 25px;
+    }
+}
+
+.btn-learnmore {
+    display: inline-block;
+    color: white;
+    background-color: map-get($theme-colors, "primary");
+    &:hover {
+        color: white;
+        background-color: map-get($theme-colors, "danger");
+    }
+    @media screen and (max-width: 991px) {
+        font-size: 0.875rem;
+        padding: 10px 25px;
+    }
+}

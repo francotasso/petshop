@@ -1,0 +1,140 @@
+.hero {
+    position: relative;
+}
+
+.hero-static-image {
+    background-image: url('https://hellloexpert.com/tf/html/oule-live/assets/images/slider/hero-shape-1.png');
+    height: 850px;
+    padding-top: 150px;
+    .hero-image {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        height: 450px;
+        h2 {
+            font-size: 1.875rem !important;
+        }
+    }
+    .container {
+        position: relative;
+        height: 100%;
+        display: table;
+        z-index: 10;
+    }
+}
+
+.slide-title > h2 {
+    font-size: 3rem;
+    line-height: 1.3em;
+    margin: 0 0 0.63em;
+}
+
+.slide-subtitle > p {
+    margin: 0 0 3em;
+}
+
+.features-section {
+    padding-bottom: 90px;
+}
+
+.section-padding {
+    padding: 120px 0;
+    @media screen and (max-width: 991px) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 90px 0;
+    }
+}
+
+.features-section {
+    h3 {
+        font-size: 1.375rem;
+        margin: 0 0 1.1em;
+        @media screen and (max-width: 1199px) {
+            font-size: 1.125rem;
+        }
+    }
+
+    .grid {
+        width: calc(33.33% - 30px);
+        float: left;
+        margin: 0 15px 30px;
+        text-align: center;
+        padding: 45px 40px;
+        box-shadow: 0px 8px 17px 3px rgba(240,240,240,1);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        transition: all 0.3s;
+        min-height: 482px;
+        &:hover {
+            background-color: map-get($theme-colors, "light");
+        }
+        @media screen and (max-width: 991px) {
+            width: calc(50% - 30px);
+            padding: 35px 30px;
+        }
+        @media screen and (max-width: 620px) {
+            width: calc(100% - 15px);
+            float: none;
+            margin: 0 7.5px 30px;
+        }
+    }
+
+    .shape {
+        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 81%, 50% 100%, 0 80%, 0% 25%);
+        clip-path: polygon(50% 0, 100% 25%, 100% 81%, 50% 100%, 0 80%, 0% 25%);
+        background: #fef1ec;
+        width: 90px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 40px;
+        text-align: center;
+        display: table;
+        &:before {
+            content: "";
+            width: 74px;
+            height: 84px;
+            -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 81%, 50% 100%, 0 80%, 0% 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 81%, 50% 100%, 0 80%, 0% 25%);
+            background: #fff;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            z-index: -1;
+        }
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            z-index: 100;
+            fill: map-get($theme-colors, "primary");
+        }
+    }
+
+    p {
+        margin-bottom: 1.5em;
+        @media screen and (max-width: 1199px) {
+            font-size: 0.9375rem
+        }
+    }
+
+    .more {
+        font-weight: 600;
+        color: map-get($theme-colors, "primary");
+    }
+}

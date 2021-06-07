@@ -1,0 +1,260 @@
+.menu-item-has-children {
+    position: relative;
+    .sub-menu {
+        li {
+            border-bottom: 1px solid #f2f2f2;
+            a, .toggle-category {
+                width: 100%;
+                font-size: 0.875rem;
+                display: block;
+                padding: 12px 15px;
+                color: #666;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            background-color: #fff;
+            width: 220px;
+            position: absolute;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 0 15px rgb(240, 240, 240);
+            visibility: hidden;
+            a, .toggle-category {
+                font-size: 0.875rem;
+                display: block;
+                padding: 12px 15px;
+                color: #666;
+                &:hover {
+                    color: map-get($theme-colors, "primary");
+                }
+            }
+            .menu-item-has-children > a, .menu-item-has-children > .toggle-category {
+                position: relative;
+                svg {
+                    font-size: 0.6875rem;
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    right: 15px;
+                    top: 50%;
+                    fill: map-get($theme-colors, "secondary");
+                    transform: translateY(-50%);
+                    z-index: 100;
+                }
+                &:hover > .sub-menu {
+                    top: 0;
+                    left: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 992px) {
+        &:hover > .sub-menu{
+            top: 100%;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    & > a, & > .toggle-category {
+        position: relative;
+    }
+    @media screen and (max-width: 991px) {
+        & > a:before, & > .toggle-category:before {
+            content: "+";
+            font-size: 1.2rem;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.site-header {
+    @media screen and (max-width: 991px) {
+        ul > li > a, ul > li > .toggle-category {
+            padding: 10px 15px 10px 35px;
+            font-size: 0.875rem;
+            border-bottom: 1px solid #f2f2f2;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .sub-menu > li > a, .sub-menu > li > .toggle-category {
+            padding: 10px 15px 10px 45px;
+        }
+        .sub-menu .sub-menu > li > a, .sub-menu .sub-menu > li > .toggle-category {
+            padding: 10px 15px 10px 65px;
+        }
+        .sub-menu > li:hover > a, .sub-menu > li:hover > .toggle-category {
+            color: map-get($theme-colors, "primary");
+        }
+    }
+    #navbar {
+        transition: all 0.5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        @media screen and (min-width: 992px) {
+            li {
+                position: relative;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            height: 100%;
+            overflow: hidden;
+            float: none;     
+        }
+    }
+    .navigation {
+        background-color: transparent !important;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        & > .container {
+            position: relative;
+        }
+        @media screen and (max-width: 991px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+        button {
+            background-color: map-get($theme-colors, "primary");
+            width: 40px;
+            height: 35px;
+            border: 0;
+            padding: 5px 10px;
+            outline: 0;
+            position: absolute;
+            right: 15px;
+            top: 16px;
+            z-index: 20;
+        }
+        .open-btn {
+            top: 3px;
+            svg {
+                fill: #fff;
+            }
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+        .navbar-brand {
+            padding: float;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    .navbar {
+        position: relative;
+        min-height: 56px;
+        @media screen and (max-width: 991px) {
+            min-height: 56px;
+        }
+    }
+    .sticky-header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: -200px;
+        z-index: 9999;
+        opacity: 0;
+        transition: all 0.7s;
+        background: #fff !important;
+        box-shadow: 0 0 15px rgb(240, 240, 240);
+        padding: 19px 0 19px;
+    }
+    .sticky-on {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.header-style-1 {
+    @media screen and (max-width: 991px) {
+        padding: 15px 0;
+    }
+    @media screen and (min-width: 992px) {
+        width: 100%;
+        padding-top: 37px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        #navbar {
+            text-align: center;
+        }
+        .navbar-nav {
+            float: none;
+            display: inline-block;
+            text-align: left;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .navbar-nav > li {
+            float: left;
+            & > a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.quote-btn {
+    position: absolute;
+    left: 125px;
+    top: 3px;
+    @media screen and (max-width: 991px) {
+        font-size: 0.875rem;
+        padding: 10px 25px;
+        right: 68px;
+        top: -10px;
+    }
+    .theme-btn {
+        background-color: #fdf0eb;
+        color: map-get($theme-colors, "primary");
+        font-weight: 500;
+        padding: 13px 38px;
+        border-radius: 50px;
+        display: inline-block;
+        &:hover {
+            background-color: map-get($theme-colors, "primary");
+            color: #fff;
+        }
+        @media screen and (max-width: 991px) {
+            font-size: 0.875rem;
+            padding: 10px 25px;
+        }
+    }
+}
+
+.b-sidebar.b-sidebar-right > .b-sidebar-header .close {
+    margin-right: auto;
+    position: absolute;
+    top: 15%;
+    left: -40px;
+    background-color: #fff;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    svg {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+}
+
+.b-sidebar-header {
+    padding-top: 0 !important;
+}
+

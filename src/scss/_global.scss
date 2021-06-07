@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+a {
+    transition: color .2s;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul > li > a {
+    font-weight: 500;
+    color: map-get($theme-colors, "secondary");
+    &:hover {
+        color: map-get($theme-colors, "primary");
+    }
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+p {
+    color: #666;
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #283a5e;
+    span {
+        color: map-get($theme-colors, "primary");
+    }
+}
+
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.body-overlay::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.back-to-top {
+    background-color: rgba(254, 108, 53, 0.7);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 2px solid map-get($theme-colors, "primary");
+    border-radius: 45px;
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 15px;
+    bottom: 15px;
+    transition: all .3s ease;
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        fill: #fff;
+        text-align: center;
+        stroke-width: 2px;
+    }
+    &:hover {
+        background-color: map-get($theme-colors, "primary");
+    }
+    @media screen and (max-width: 991px) {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+// reset
+[role="button"] {
+    outline: none !important;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+// Global scss
+@import "config";
+@import "commons";
+
+// Libraries
+@import "~bootstrap";
+@import "~bootstrap-vue";
+@import '~hooper/dist/hooper.css';
+
+// Local
+@import "global";
+@import "views/index";
+@import "components/index";
+@import "vendors/index";
+@import "layouts/index";
