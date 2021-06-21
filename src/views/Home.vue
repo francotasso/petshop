@@ -57,7 +57,7 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <span class="more">S/ 7.00</span>
+                <span class="more">S/ 8.00</span>
               </div>
               <div class="grid">
                 <div>
@@ -70,7 +70,7 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <span class="more">S/ 10.00</span>
+                <span class="more">S/ 12.00</span>
               </div>
               <div class="grid">
                 <div>
@@ -166,7 +166,7 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <span class="more">S/ 26.00</span>
+                <span class="more">S/ 30.00</span>
               </div>
               <div class="grid">
                 <div>
