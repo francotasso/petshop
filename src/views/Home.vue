@@ -53,7 +53,7 @@
                     <b-img :src="require('@/assets/products/juguete-peluche-pajaro-chico.jpeg')" width="200" fluid alt="Juguete pelucho pájaro chico"></b-img>
                   </div>
                 </div>
-                <h3>Juguete pelucho pájaro chico</h3>
+                <h3>Juguete peluche pájaro chico</h3>
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
