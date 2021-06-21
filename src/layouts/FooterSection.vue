@@ -23,12 +23,12 @@
                                 <li>
                                     <span>Gatos</span>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <span>Iguanas</span>
                                 </li>
                                 <li>
                                     <span>Monos</span>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                 <div class="row">
                     <div class="separator"></div>
                     <div class="col col-xs-12">
-                        <p class="copyright">Copyright © 2021 Pets. Todos los derechos reservados.</p>
+                        <p class="copyright">Copyright © 2021 +Pets. Todos los derechos reservados.</p>
                         <div class="social-icons">
                             <ul>
                                 <!-- <li>
