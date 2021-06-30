@@ -84,8 +84,8 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <div class="more">Chico: S/ 8.00</div>
-                <div class="more">Grande: S/ 12.00</div>
+                <div class="more">Chico: S/ 9.00</div>
+                <div class="more">Grande: S/ 14.00</div>
               </div>
               <div class="grid">
                 <div>
@@ -140,7 +140,7 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <span class="more">S/ 7.00</span>
+                <span class="more">S/ 8.00</span>
               </div>
               <div class="grid">
                 <div>
@@ -153,7 +153,7 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <span class="more">S/ 8.00</span>
+                <span class="more">S/ 9.00</span>
               </div>
               <div class="grid">
                 <div>
@@ -205,9 +205,9 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <div class="more">Chico: S/ 4.00</div>
-                <div class="more">Mediano: S/ 5.00</div>
-                <div class="more">Grande: S/ 6.00</div>
+                <div class="more">Chico: S/ 5.00</div>
+                <div class="more">Mediano: S/ 6.00</div>
+                <div class="more">Grande: S/ 7.00</div>
               </div>
             </div>
             <div class="features-grids clearfix">
@@ -301,8 +301,8 @@
                 <!-- <p>
                   It is a long established fact that a reader will be distracted by the readable content
                 </p> -->
-                <div class="more">Chico: S/ 12.00</div>
-                <div class="more">Grande: S/ 14.00</div>
+                <div class="more">Chico: S/ 10.00</div>
+                <div class="more">Grande: S/ 12.00</div>
               </div>
             </div>
             <div class="features-grids clearfix">
